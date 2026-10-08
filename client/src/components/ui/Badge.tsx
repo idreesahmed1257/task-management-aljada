@@ -2,8 +2,6 @@ import React from 'react';
 import type { TaskStatus, TaskPriority } from '../../types';
 import { formatStatus } from '../../utils/format';
 
-type BadgeVariant = 'status' | 'priority';
-
 interface StatusBadgeProps {
   type: 'status';
   value: TaskStatus;

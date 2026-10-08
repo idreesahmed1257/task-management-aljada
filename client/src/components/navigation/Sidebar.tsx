@@ -70,7 +70,7 @@ export default function Sidebar({ onLogout, adminEmail }: SidebarProps) {
               transition: 'background 0.15s, color 0.15s',
             })}
           >
-            <Icon size={16} strokeWidth={isActive => isActive ? 2.2 : 1.8} />
+            <Icon size={16} strokeWidth={1.8} />
             {label}
           </NavLink>
         ))}
