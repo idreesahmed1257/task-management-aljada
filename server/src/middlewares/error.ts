@@ -16,6 +16,8 @@ export function errorHandler(
     return;
   }
 
+  console.error('[server error]', err);
+
   const isDev = process.env.NODE_ENV === 'development';
   const message = isDev && err instanceof Error ? err.message : 'Internal server error';
 

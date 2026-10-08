@@ -12,7 +12,7 @@ export const env = {
   PORT: parseInt(process.env.PORT ?? '5000', 10),
   MONGODB_URI: required('MONGODB_URI'),
   JWT_SECRET: required('JWT_SECRET'),
-  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN ?? '7d',
+  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '7d',
   CLIENT_URL: process.env.CLIENT_URL ?? 'http://localhost:3000',
   ADMIN_EMAIL: process.env.ADMIN_EMAIL ?? '',
   ADMIN_PASSWORD: process.env.ADMIN_PASSWORD ?? '',
