@@ -13,16 +13,7 @@ const app = express();
 
 app.set('trust proxy', 1);
 app.use(helmet());
-app.use(
-  cors({
-    origin: [
-      'https://task-management-aljida-client.vercel.app',
-      'http://localhost:3000',
-      'http://localhost:5173',
-    ],
-    credentials: true,
-  })
-);
+app.use(cors({ origin: true, credentials: true }));
 app.use(
   rateLimit({
     windowMs: 15 * 60 * 1000,
